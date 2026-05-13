@@ -84,7 +84,7 @@
     //pickup all selected values.
     for(let i=0;i<$menu.length;i++ ){
       let $m = $menu.eq(i), v='';
-      if(init) v= $m.attr('value');
+      if(init) v= $m.attr('data-c2p-ff');
       else v = $m[0].selectedIndex>0 ? $m[0].selectedOptions[0].value:'';
       $m.children().remove(':not(.filter-option):not(.default-option)');
       $option = $m.find('option.filter-option');

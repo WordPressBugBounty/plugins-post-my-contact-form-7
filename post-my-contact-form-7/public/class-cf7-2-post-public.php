@@ -39,6 +39,14 @@ class Cf7_2_Post_Public {
 	 */
 	private $version;
 	/**
+	 * The version of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      boolean    $not_form_page    Flag to prevent page caching form values.
+	 */
+	private $not_form_page;
+	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0

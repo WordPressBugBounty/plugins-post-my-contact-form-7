@@ -501,8 +501,10 @@ class Cf7_2_Post_Admin {
 					'save', // tag id.
 					__( 'save', 'post-my-contact-form-7' ), // tag button label.
 					array( $this, 'save_tag_generator' ), // callback.
-					array( 'nameless' => 1 ) // option name less = true, ie no name for this tag.
-				);
+					array( 
+						'nameless' => 1,  // option name less = true, ie no name for this tag.
+						'version' => 2 )
+					);
 			}
 		}
 	}

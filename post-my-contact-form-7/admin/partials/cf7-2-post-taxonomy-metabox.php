@@ -30,7 +30,7 @@ foreach ( $mapped_taxonomy as $cf7_field => $post_taxonomy ) :
 			</span>&nbsp;
 			(<span class="enabled link-button edit-taxonomy"><?php echo esc_html( __( 'Edit', 'post-my-contact-form-7' ) ); ?></span>)
 			</label>
-			<select class="select-hybrid field-options taxonomy-options" name="cf7_2_post_map_taxonomy_value-<?php echo esc_attr( $post_taxonomy ); ?>/<?php echo esc_attr( $val ); ?>" value="<?php echo esc_attr( $cf7_field ); ?>">
+			<select class="select-hybrid field-options taxonomy-options" name="cf7_2_post_map_taxonomy_value-<?php echo esc_attr( $post_taxonomy ); ?>/<?php echo esc_attr( $val ); ?>" data-c2p-ff="<?php echo esc_attr( $cf7_field ); ?>">
 			<option class="default-option" selected="true" value="">
 				<?php echo esc_html( __( 'Select a form field', 'post-my-contact-form-7' ) ); ?>
 			</option>

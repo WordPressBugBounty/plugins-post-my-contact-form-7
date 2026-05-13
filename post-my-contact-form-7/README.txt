@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: contact form 7, contact form 7 extension, form to post, contact form 7 module 
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.4.3
-Stable tag: 6.1.0
+Tested up to: 6.9.4
+Stable tag: 6.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -590,6 +590,8 @@ The following have contributed to bug fixes, documentation, and/or translations 
 As of now there is no special upgrade notes, simply  follow the normal plugin update process.
 
 == Change Log ==
+= 6.2.0 = 
+* fix mapping editor: HTML select fields no longer accept `value` attributes.
 = 6.1.0 = 
 * Mapped select fields to taxonomy now conform to Schema-Woven Validation API.
 = 6.0.7 =

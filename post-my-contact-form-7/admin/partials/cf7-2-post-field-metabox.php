@@ -29,7 +29,7 @@ foreach ( $mapped_fields as $cf7_field => $post_field ) :
 		<?php
 		// display the meta-field's form field dropdown.
 		echo sprintf(
-			'<select %4$s name="cf7_2_post_map_meta_value%1$s" value="%2$s" class="field-options post-options select-hybrid">
+			'<select %4$s name="cf7_2_post_map_meta_value%1$s" data-c2p-ff="%2$s" class="field-options post-options select-hybrid">
 				<option class="default-option" selected="true" value="">' . esc_html( __( 'Select a form field', 'post-my-contact-form-7' ) ) . '</option>
 				<option class="filter-option" value="cf7_2_post_filter%3$s%1$s">' . esc_html( __( 'Hook with a filter', 'post-my-contact-form-7' ) ) . '</option>
 			</select>',
@@ -57,7 +57,7 @@ foreach ( $mapped_fields as $cf7_field => $post_field ) :
 		</div>
 		<?php
 		echo sprintf(
-			'<select %4$s name="cf7_2_post_map_meta_value%1$s" value="%2$s" class="field-options post-options select-hybrid">
+			'<select %4$s name="cf7_2_post_map_meta_value%1$s" data-c2p-ff="%2$s" class="field-options post-options select-hybrid">
 				<option class="default-option" selected="true" value="">' . esc_html( __( 'Select a form field', 'post-my-contact-form-7' ) ) . '</option>
 				<option class="filter-option" value="cf7_2_post_filter%3$s%1$s">' . esc_html( __( 'Hook with a filter', 'post-my-contact-form-7' ) ) . '</option>
 			</select>',

@@ -156,12 +156,14 @@ switch ( $source ) {
 			'slug'      => __( 'Post slug', 'post-my-contact-form-7' ),
 			'author'    => __( 'Post author', 'post-my-contact-form-7' ),
 		);
+		
 		foreach ( $post_fields as $fid => $l ) {
-			echo sprintf(
+			// debug_msg("{$fid}=>{$post_mapper->get_mapped_form_field( $fid )}");
+			$prt = sprintf(
 				'<li id="c2p-%2$s">
 					<div class="cf7-2-post-field">
 						<label class="cf7-2-post-map-labels" for="cf7-2-%2$s"><strong>%1$s</strong></label>
-						<select id="cf7-2-%2$s" value="%3$s" name="cf7_2_post_map-%2$s" class="field-options post-options select-hybrid">
+						<select id="cf7-2-%2$s" data-c2p-ff="%3$s" name="cf7_2_post_map-%2$s" class="field-options post-options select-hybrid">
 							<option class="default-option" value="">' . esc_html( __( 'Select a form field', 'post-my-contact-form-7' ) ) . '</option>
 							<option class="filter-option" value="cf7_2_post_filter-%4$s-%2$s">' . esc_html( __( 'Hook with a filter', 'post-my-contact-form-7' ) ) . '</option>
 						</select>
@@ -172,6 +174,8 @@ switch ( $source ) {
 				esc_attr( $post_mapper->get_mapped_form_field( $fid ) ), // %3 - mapped form field.
 				esc_attr( $mapped_post_type ), // %4 - mapped post type.
 			);
+			debug_msg($prt);
+			echo $prt;
 		}
 		?>
 	</ul>
